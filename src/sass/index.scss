@@ -2,7 +2,10 @@
 @import './example';
 // Base
 @import './base/reset';
+// Component
+@import './components/button';
 
 // Layouts
 @import './layouts/header';
+@import './layouts/hero';
 @import './layouts/about-us';
