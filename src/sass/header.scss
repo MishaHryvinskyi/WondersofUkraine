@@ -1,0 +1,23 @@
+.header {
+    padding: 0 40px;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.header__navigation-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__navigation-items {
+    list-style: none;
+    margin-right: 64px;
+}
+
+a {
+   text-decoration: double;
+}
