@@ -5,75 +5,74 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
-@media screen and(min-width:320px) and (max-width:834px) {
-
-    .hero {
+    @media screen and(min-width:320px) and (max-width:834px) {
         height: 861px;
         background-image: url(../images/mountains-4x-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .hero__title {
-        font-size: 24px;
-        width: 234px;
-    }
-
-    .hero__accent {
-        font-size: 64px;
-    }
-
-    .hero__soc-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero__soc-list :not(:last-child) {
-        margin-right: 15px;
-    }
-}
-
-@media screen and(min-width:835px) {
-
-    .hero {
+    @media screen and(min-width:835px) {
         height: 1075px;
         background-image: url(../images/mountains-4x-talet.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .hero__title {
-        font-size: 48px;
-        width: 468px;
-        height: 134px;
-    }
-
-    .hero__accent {
-        font-size: 128px;
-    }
-
-    .hero__soc-list {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0;
-        align-items: end;
-        justify-content: flex-end;
-        flex-wrap: nowrap;
-    }
-
-    .hero__soc-list :not(:last-child) {
-        margin-bottom: 15px;
-    }
-}
-
-@media screen and(min-width:1440px) {
-    .hero {
+    @media screen and(min-width:1440px) {  
         height: 855px;
         background-image: url(../images/mountain-4x-desktop.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+    }        
+
+    &__title {
+        @media screen and(min-width:320px) and (max-width:834px) {
+            font-size: 24px;
+            width: 234px;
+        }
+
+        @media screen and(min-width:835px) {
+            font-size: 48px;
+            width: 468px;
+            height: 134px;
+        }
+    }
+
+    &__accent {
+        @media screen and(min-width:320px) and (max-width:834px) {
+            font-size: 64px;
+        }
+    
+        @media screen and(min-width:835px) {
+            font-size: 128px;
+        }
+    }
+
+    &__soc-list {
+        @media screen and(min-width:320px) and (max-width:834px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and(min-width:835px) {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+            align-items: end;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+        }
+    }
+    
+    &__soc-list :not(:last-child) {
+        @media screen and(min-width:320px) and (max-width:834px) {
+            margin-right: 15px;
+        }
+
+        @media screen and(min-width:835px) {
+            margin-bottom: 15px;
+        }
     }
 }
