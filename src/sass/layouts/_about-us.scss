@@ -1,61 +1,39 @@
 .about-us {
-    background-color: #141A19;
     padding-top: 171px;
     height: 573px;
-}
-
-.about-us__title {
-    text-align: center;
-    color: #FFF;
-    font-family: Jomolhari;
-    font-weight: 400;
-    line-height: 140%; 
-    letter-spacing: 0.4px;
-    margin-bottom: 64px;
-}
-
-.about-us__paragraph {
-    color: white;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: 0.16px;
-    margin-bottom: 32px;
-}
-
-@media screen and (min-width:320px) and (max-width:375px) {
-
-    .about-us__title {
-        font-size: 40px;
+    @media screen and (min-width:320px) {
+        height: auto;
+    }
+    &__paragraph {
+        margin-bottom: 32px;
     }
 
-}
-
-@media screen and (min-width:835px) {
-    .about-us__title {
-        font-size: 64px;
+    &__title {
+        @media screen and (min-width:320px) and (max-width:375px) {
+            font-size: 40px;
+        }
     }
+
+    &__paragraph {
+        @media screen and (min-width:835px) {
+            width: 369px;
+        }
     
-    .about-us__paragraph {
-        width: 369px;
+        @media screen and (min-width:1440px) {
+            width: 469px;
+        }
     }
 
-    .about-us__wtapper {
-        display: flex;
-        justify-content: center;
+    &__wtapper {
+        @media screen and (min-width:835px) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
-    .about-us__paragraph-wrapper {
-        margin-left: 32px;
+    &__paragraph-wrapper {
+        @media screen and (min-width:835px) {
+            margin-left: 32px;
+        }
     }
-}
-
-@media screen and (min-width:1440px) {
-    
-    .about-us__paragraph {
-        width: 469px;
-    }
-
-    
 }
