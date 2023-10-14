@@ -10,8 +10,13 @@ ul, ol, li {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 p {
     margin: 0;
+}
+
+address {
+    font-style: normal;
 }
