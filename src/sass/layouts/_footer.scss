@@ -1,0 +1,134 @@
+.footer {
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width:835px) {
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+
+    &__wrapper {
+        margin-bottom: 64px;
+    
+        @media screen and (min-width:320px) {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        @media screen and (min-width: 835px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo-wrapper {
+        @media screen and (min-width:320px) {
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width:835px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__logo-svg {
+        width: 127px;
+        height: 90px;
+
+        @media screen and (min-width:835px) {
+            width: 169px;
+            height: 125px;
+        }
+
+        @media screen and (min-width:1440px) {
+            width: 196px;
+            height: 192px;
+        }
+    }
+
+    &__navigation-list {
+        @media screen and (min-width:320px) {
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width:835px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__navigation-list li:not(:last-child) {
+        @media screen and (min-width:320px) {
+            margin-bottom: 8px;
+        }
+
+        @media screen and (min-width:835px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__navigation-link {
+        @media screen and (min-width:835px) {
+            font-size: 18px;
+            letter-spacing: 0.18px;
+        }
+    }
+
+    &__address-list {
+        @media screen and (min-width:320px) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__address-list li {
+        display: flex;
+        flex-direction: column;
+       
+        @media screen and (min-width:835px) {
+            align-items: flex-end;
+        }
+    }
+
+    &__address-list li:not(:last-child) {
+        @media screen and (min-width:320px) {
+            margin-bottom: 8px;
+        }
+
+        @media screen and (min-width:835px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__address-link {
+        @media screen and (min-width:835px) {
+            font-size: 18px;
+            letter-spacing: 0.18px;
+        }
+    }
+
+    &__soc-list {
+        display: flex;
+        @media screen and (min-width:835px) {
+            justify-content: end;
+        }
+    }
+
+    &__soc-list :not(:last-child) {
+        margin-right: 15px;
+    }
+
+    &__rights {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Jomolhari;
+        font-size: 12px;
+        letter-spacing: 0.12px;
+    
+        @media screen and (min-width:835px) {
+        font-size: 14px;
+        letter-spacing: 0.14px;
+        }
+    }
+}
