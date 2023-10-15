@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./sass/index.scss" />
 
    <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
 
     <script type="module" src="./index.js"></script>
   </head>
@@ -29,7 +29,7 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper', {
-      slidesPerView: 4,
+      slidesPerView: 1,
       direction: getDirection(),
       navigation: {
         nextEl: '.swiper-button-next',
@@ -44,7 +44,7 @@
 
     function getDirection() {
       var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+      var direction = window.innerWidth = 'horizontal';
 
       return direction;
     }

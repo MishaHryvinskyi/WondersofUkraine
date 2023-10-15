@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and(min-width:320px) and (max-width:834px) {
+    @media screen and(min-width:375px) and (max-width:834px) {
         height: 861px;
         background-image: url(../images/mountains-4x-mobile.jpg);
         background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 
     &__title {
         height: auto;
-        @media screen and(min-width:320px) and (max-width:834px) {
+        @media screen and(min-width:375px) and (max-width:834px) {
             font-size: 24px;
             width: 234px;
         }
@@ -41,7 +41,7 @@
     }
 
     &__accent {
-        @media screen and(min-width:320px) and (max-width:834px) {
+        @media screen and(min-width:375px) and (max-width:834px) {
             font-size: 64px;
         }
     
@@ -51,7 +51,7 @@
     }
 
     &__soc-list {
-        @media screen and(min-width:320px) and (max-width:834px) {
+        @media screen and(min-width:375px) and (max-width:834px) {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -67,7 +67,7 @@
     }
     
     &__soc-list :not(:last-child) {
-        @media screen and(min-width:320px) and (max-width:834px) {
+        @media screen and(min-width:375px) and (max-width:834px) {
             margin-right: 15px;
         }
 
