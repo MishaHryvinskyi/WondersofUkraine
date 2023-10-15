@@ -12,7 +12,7 @@
     &__wrapper {
         margin-bottom: 64px;
     
-        @media screen and (min-width:320px) {
+        @media screen and (min-width:375px) {
             display: flex;
             flex-direction: column;
         }
@@ -24,7 +24,7 @@
     }
 
     &__logo-wrapper {
-        @media screen and (min-width:320px) {
+        @media screen and (min-width:375px) {
             margin-bottom: 32px;
         }
 
@@ -49,7 +49,7 @@
     }
 
     &__navigation-list {
-        @media screen and (min-width:320px) {
+        @media screen and (min-width:375px) {
             margin-bottom: 32px;
         }
 
@@ -59,7 +59,7 @@
     }
 
     &__navigation-list li:not(:last-child) {
-        @media screen and (min-width:320px) {
+        @media screen and (min-width:375px) {
             margin-bottom: 8px;
         }
 
@@ -76,7 +76,7 @@
     }
 
     &__address-list {
-        @media screen and (min-width:320px) {
+        @media screen and (min-width:375px) {
             margin-bottom: 32px;
         }
     }
@@ -91,7 +91,7 @@
     }
 
     &__address-list li:not(:last-child) {
-        @media screen and (min-width:320px) {
+        @media screen and (min-width:375px) {
             margin-bottom: 8px;
         }
 

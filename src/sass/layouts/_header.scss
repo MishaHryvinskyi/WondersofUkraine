@@ -6,7 +6,7 @@
     z-index: 999;
 }
 
-@media screen and (min-width:320px) and (max-width:480px) {
+@media screen and (min-width:375px) {
     // .header__mobile {
     //     position: fixed;
     //     top: 0;
@@ -56,7 +56,7 @@
     }
 }
 
-@media screen and (min-width:320px) and (max-width:834px) {
+@media screen and (min-width:375px) and (max-width:834px) {
     .header__navigation-list {
         display: none;
     }
