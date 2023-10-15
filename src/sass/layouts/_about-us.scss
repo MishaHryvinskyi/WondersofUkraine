@@ -8,12 +8,6 @@
         margin-bottom: 32px;
     }
 
-    &__title {
-        @media screen and (min-width:375px) {
-            font-size: 40px;
-        }
-    }
-
     &__paragraph {
         @media screen and (min-width:835px) {
             width: 369px;
