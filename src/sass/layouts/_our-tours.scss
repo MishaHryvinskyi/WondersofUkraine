@@ -19,3 +19,40 @@
 .our-tours__button {
     margin-right: 46px;
 }
+
+.our-tours__header {
+    font-family: Jomolhari;
+    font-size: 32px;
+    letter-spacing: 0.32px;
+    margin-bottom: 32px;
+}
+
+.our-tours__description li {
+    list-style: disc;
+}
+
+.our-tours__description {
+    margin-bottom: 40px;
+}
+
+.our-tours__Included li {
+    display: flex;
+}
+
+.our-tours__Included :not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.our-tours__Included {
+    margin-bottom: 32px;
+}
+
+.our-tours__Included-svg {
+    margin-right: 16px
+}
+
+.our-tours__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
