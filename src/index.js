@@ -41,3 +41,47 @@
     speed: 1000,
 
   });
+
+  new Swiper(".our-tours__swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    centeredSlides: false,
+    initialSlide: 0,
+    loop: true,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      375: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      835: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      1440: {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 32,
+
+      },
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    speed: 1000,
+
+  });
