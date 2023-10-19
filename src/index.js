@@ -1,4 +1,4 @@
- new Swiper(".gallery__slider", {
+ export const gallerySwiper = new Swiper(".gallery__slider", {
     navigation: {
       nextEl: ".gallery__button-next",
       prevEl: ".gallery__button-prev",
@@ -42,7 +42,7 @@
 
   });
 
-  new Swiper(".our-tours__swiper", {
+  export const toursSwiper = new Swiper(".our-tours__swiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -85,3 +85,15 @@
     speed: 1000,
 
   });
+
+  export const reviewSwiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    
+    loop: true,
+
+
+  });
+
