@@ -1,8 +1,9 @@
 .our-tours__img {
-
+    border-radius: 4px;
+    margin-bottom:106px;
     @media screen and (min-width:375px) {
         width: 454px;
-    height: 409px;
+        height: 409px;
     }
     @media screen and (min-width:835px) {
         width: 918px;
@@ -12,6 +13,23 @@
         width: 704px;
         height: 515px;
     }
+}
+
+.swiper-wrapper .swiper-slide {
+    @media screen and (min-width:375px) {
+        max-width: 454px;
+    }
+    @media screen and (min-width:835px) {
+        max-width: 918px;
+    }
+    @media screen and (min-width:1440px) {
+        max-width: 704px;
+    }
+}
+
+.our-tours__info-wrapper {
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .our-tours__header {
