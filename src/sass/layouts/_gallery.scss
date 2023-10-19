@@ -7,14 +7,17 @@
     &__images {
         @media screen and (min-width:375px) {
             width: 343px;
+            height: 494px;
         }
     
         @media screen and (min-width:835px) {
             width: 377px;
+            height: 494px;
         }
     
         @media screen and (min-width:1440px) {
             width: 400px;
+            height: 494px;
         }
         border-radius: 6px;
     }
@@ -28,12 +31,15 @@
     max-width: 400px;
     @media screen and (min-width:375px) {
         width: 343px;
+        height: 494px;
     }
     @media screen and (min-width: 835px) {
         width: 377px;
+        height: 494px;
     }
     @media screen and (min-width: 1440px) {
         width: 400px;
+        height: 494px;
     }
 }
 
@@ -45,8 +51,14 @@
 
 .gallery__button-prev,
 .gallery__button-next {
+    fill: var(--main-text-color);
     background-color: inherit;
     border: none;
     height: 10px;
     cursor: pointer;
+}
+
+.gallery__button-prev svg:hover,
+.gallery__button-next svg:hover {
+    fill: var(--hover-svg-color);
 }
