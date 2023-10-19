@@ -1,0 +1,83 @@
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .reviews {
+        padding-bottom: 128px;
+    }
+
+    .review-wrapper {
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        width: 320px;
+        height: 352px;
+        border: 1px solid var(--main-text-color);
+        border-radius: 4px;
+        padding: 32px;
+    }
+
+    .review-wrapper__title {
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .review-title {
+        @media screen and (min-width:375px) {
+            font-family: Jomolhari;
+            font-size: 18px;
+            letter-spacing: 0.18px;
+        }
+        @media screen and (min-width:835px) {
+            font-family: Jomolhari;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        }
+        margin-bottom: 8px;
+    }
+
+    .review-wrapper__title::before {
+        content: "";
+        background-image: url(../images/png/dmitro.png.jpg);
+        background-size: contain;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-right: 24px;
+    } 
+
+
+    .review-list {
+        display: flex;
+    }
+
+    .review-list :not(:last-child) {
+        margin-right: 4px;
+    }
