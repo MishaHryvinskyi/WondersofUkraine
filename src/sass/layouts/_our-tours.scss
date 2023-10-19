@@ -1,10 +1,24 @@
-.our-tours__swiper {
-    width: 704px;
+.our-tours__img {
+
+    @media screen and (min-width:375px) {
+        width: 454px;
+    height: 409px;
+    }
+    @media screen and (min-width:835px) {
+        width: 918px;
+        height: 642px;
+    }
+    @media screen and (min-width:1440px) {
+        width: 704px;
+        height: 515px;
+    }
 }
 
-.swiper-slide .our-tours__img {
-    width: 704px;
-    height: 515px;
+.our-tours__header {
+    font-family: Jomolhari;
+    font-size: 32px;
+    letter-spacing: 0.32px;
+    margin-bottom: 32px;
 }
 
 .our-tours__footer {
@@ -18,13 +32,6 @@
 
 .our-tours__button {
     margin-right: 46px;
-}
-
-.our-tours__header {
-    font-family: Jomolhari;
-    font-size: 32px;
-    letter-spacing: 0.32px;
-    margin-bottom: 32px;
 }
 
 .our-tours__description li {
