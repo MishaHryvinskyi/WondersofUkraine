@@ -23,7 +23,7 @@
         slidesPerGroup: 1,
       },
       1440: {
-        slidesPerView: 3,
+        slidesPerView: 3.4,
         slidesPerGroup: 1,
       },
     },
@@ -49,8 +49,6 @@
     },
     centeredSlides: false,
     initialSlide: 0,
-    loop: true,
-
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -68,14 +66,12 @@
         slidesPerView: 2,
         slidesPerGroup: 1,
         spaceBetween: 32,
-
       },
-    },
-
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-      pageUpDown: true,
+      autoplay: {
+        delay: 5000,
+      },
+  
+      speed: 1000,
     },
 
     autoplay: {

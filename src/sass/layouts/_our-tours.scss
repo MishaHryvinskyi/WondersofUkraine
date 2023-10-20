@@ -27,9 +27,20 @@
     }
 }
 
+.our-tours__included-header {
+    font-family: Jomolhari;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    margin-bottom: 16px;
+}
+
 .our-tours__info-wrapper {
     padding-left: 32px;
     padding-right: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 530px;
 }
 
 .our-tours__header {
