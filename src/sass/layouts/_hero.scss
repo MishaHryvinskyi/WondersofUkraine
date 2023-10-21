@@ -38,6 +38,10 @@
             font-size: 48px;
             width: 468px;
         }
+
+        @media screen and (min-width:1440px) {
+            margin-top: 180px;
+        }
     }
 
     &__accent {
@@ -50,6 +54,10 @@
         }
     }
 
+.hero__button {
+    margin-bottom: 50px;
+}
+
     &__soc-list {
         @media screen and(min-width:375px) and (max-width:834px) {
             display: flex;
@@ -59,10 +67,8 @@
         @media screen and(min-width:835px) {
             display: flex;
             flex-direction: column;
-            margin-right: 0;
-            align-items: end;
-            justify-content: flex-end;
-            flex-wrap: nowrap;
+            align-items: flex-end;
+            margin-left: auto;
         }
     }
     
