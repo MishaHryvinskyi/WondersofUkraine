@@ -50,14 +50,16 @@
     @media screen and (min-width:375px) and (max-width:834px) {
         justify-content: space-between;
         height: 560px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     @media screen and (min-width:835px) {
-        
-    }
-    @media screen and (min-width:1440px) {
         padding-left: 32px;
         padding-right: 32px;
+    }
+    @media screen and (min-width:1440px) {
         height: 530px;
+        padding-left: 32px;
     }
 }
 
