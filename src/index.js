@@ -53,14 +53,17 @@
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        spaceBetween: 16,
       },
       375: {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        spaceBetween: 16,
       },
       835: {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        spaceBetween: 32,
       },
       1440: {
         slidesPerView: 2,
@@ -87,7 +90,7 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    
+    spaceBetween: 32,
     loop: true,
 
 
