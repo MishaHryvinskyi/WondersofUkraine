@@ -93,6 +93,33 @@
     spaceBetween: 32,
     loop: true,
 
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 16,
+      },
+      375: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 16,
+      },
+      835: {
+        slidesPerView: 2.2,
+        slidesPerGroup: 1,
+        spaceBetween: 32,
+      },
+      1440: {
+        slidesPerView: 4,
+        slidesPerGroup: 1,
+        spaceBetween: 32,
+      },
+      autoplay: {
+        delay: 5000,
+      },
+  
+      speed: 1000,
+    },
 
   });
 

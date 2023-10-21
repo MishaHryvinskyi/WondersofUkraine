@@ -1,37 +1,54 @@
+
 html,
-    body {
-      position: relative;
-      height: 100%;
-    }
+body {
+  position: relative;
+  height: 100%;
+}
 
-    body {
-      margin: 0;
-      padding: 0;
-    }
+body {
+  margin: 0;
+  padding: 0;
+}
 
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+// review
+    
     .reviews {
         padding-bottom: 128px;
+        @media screen and (min-width:375px) {
+          background-image: url(../images/background-review/background-review-mobile.jpg.jpg);
+          background-size:cover;
+        }
+        @media screen and (min-width:835px) {
+          background-image: url(../images/background-review/background-review-tablet.jpg.jpg);
+           background-size:cover;
+        }
+        @media screen and (min-width:1440px) {
+          background-image: url(../images/background-review/background-review-dekstop.jpg.jpg);
+          background-size:cover;
+        }
     }
 
     .review-wrapper {
+    @media screen and (min-width:375px) {
+      width: 343px;
+    }
         display: flex;
         align-items:flex-start;
         flex-direction: column;
@@ -63,7 +80,7 @@ html,
         margin-bottom: 8px;
     }
 
-    .review-wrapper__title::before {
+    .first-review::before {
         content: "";
         background-image: url(../images/png/dmitro.png.jpg);
         background-size: contain;
@@ -72,6 +89,83 @@ html,
         height: 80px;
         margin-right: 24px;
     } 
+
+    .second-review::before {
+      content: "";
+        background-image: url(../images/png/alisa.png.jpg);
+        background-size: contain;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-right: 24px;
+    }
+
+    .third-review::before {
+      content: "";
+        background-image: url(../images/png/marry.png.jpg);
+        background-size: contain;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-right: 24px;
+    }
+
+    .fourth-review::before {
+      content: "";
+      background-image: url(../images/png/fedir.png.jpg);
+      background-size: contain;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-right: 24px;
+    }
+
+    .fifth-review::before {
+      content: "";
+      background-image: url(../images/png/anastasia.png.jpg);
+      background-size: contain;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-right: 24px;
+    }
+
+    .sixth-review::before {
+      content: "";
+      background-image: url(../images/png/victoria.png.jpg);
+      background-size: contain;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-right: 24px;
+    }
+
+    .seventh-review::before {
+      content: "";
+      background-image: url(../images/png/valeriy.png.jpg);
+      background-size: contain;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-right: 24px;
+    }
+
+    .eighth-review::before {
+      content: "";
+      background-image: url(../images/png/ilona.png.jpg);
+      background-size: contain;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-right: 24px;
+    }
+
+    .review-wrapper__title {
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+  }
 
 
     .review-list {
