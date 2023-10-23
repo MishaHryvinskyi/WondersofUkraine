@@ -59,10 +59,9 @@
     }
 
     &__title {
-        font-family: Jomolhari;
         font-size: 32px;
-        letter-spacing: 0.32px;
         margin-bottom: 24px;
+        display: flex;
     }
 
     &__paragraph-wrapper {

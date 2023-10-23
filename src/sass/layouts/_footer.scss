@@ -71,7 +71,6 @@
     &__navigation-link {
         @media screen and (min-width:835px) {
             font-size: 18px;
-            letter-spacing: 0.18px;
         }
     }
 
@@ -103,7 +102,6 @@
     &__address-link {
         @media screen and (min-width:835px) {
             font-size: 18px;
-            letter-spacing: 0.18px;
         }
     }
 
@@ -124,11 +122,9 @@
         margin-right: auto;
         font-family: Jomolhari;
         font-size: 12px;
-        letter-spacing: 0.12px;
     
         @media screen and (min-width:835px) {
         font-size: 14px;
-        letter-spacing: 0.14px;
         }
     }
 }

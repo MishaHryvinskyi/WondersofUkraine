@@ -90,11 +90,22 @@
     }
 }
 
+.our-tours__description {
+    @media screen and (min-width:375px) {
+        width: auto;
+    }
+    @media screen and (min-width:835px) {
+        width: auto;
+    }
+    @media screen and (min-width:1440px) {
+        width: 496px;
+    }
+}
+
 .our-tours__header {
-    font-family: Jomolhari;
     font-size: 32px;
-    letter-spacing: 0.32px;
     margin-bottom: 32px;
+    display: flex;
 }
 
 .our-tours__footer {
@@ -108,6 +119,8 @@
 }
 
 .our-tours__footer-paragraph {
+    font-size: 32px;
+    margin-bottom: 0;
     @media screen and (min-width:375px) and (max-width:1439px) {
         display: none;
     }
