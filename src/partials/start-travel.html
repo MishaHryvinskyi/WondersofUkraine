@@ -5,11 +5,11 @@
             <p class="order_paragraph">If you want to get an unforgettable trip, quickly fill out the application and we will contact you during the day</p>
             <p>We are ready to answer any questions and help choose the best tour</p>
         </div>
-        <form class="order__form" action="">
+        <form class="order__form" name="order">
             <label class="order__label" for="user_name">Name</label>
-             <input class="order__input" type="text" placeholder="Enter your name" id="user_name">
+             <input class="order__input" name="name" type="text" placeholder="Enter your name" id="user_name" autofocus>
             <label class="order__label" for="user_phone">Phone</label>
-            <input class="order__input" type="text" placeholder="+380__-___-__-__" id="user_phone">
+            <input class="order__input" name="phone" type="tel" placeholder="+380__-___-__-__" id="user_phone">
             <textarea class="order__textarea" name="" id="" cols="30" rows="5" placeholder="Your message"></textarea>
             <button class="button" type="submit">Send</button>
         </form>
