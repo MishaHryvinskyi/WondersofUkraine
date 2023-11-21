@@ -27,7 +27,7 @@
         background-size: cover;
     }        
 
-    &__title {
+    .hero__title {
         height: auto;
         @media screen and(min-width:375px) and (max-width:834px) {
             font-size: 24px;
@@ -42,7 +42,8 @@
         }
     }
 
-    &__accent {
+    .hero__accent {
+        position: relative;
         @media screen and(min-width:375px) and (max-width:834px) {
             font-size: 64px;
         }
@@ -52,11 +53,25 @@
         }
     }
 
+    .hero__accent::after {
+        position: absolute;
+        top: 120px;
+        display: flex;
+        content: "Ukraine";
+        background: linear-gradient(15deg, #FFF -54.67%, rgba(255, 255, 255, 0.00) 68.38%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: rotateY(10deg) rotateX(180deg);
+        vertical-align: middle;
+    }
+
 .hero__button {
-    margin-bottom: 50px;
+    margin-bottom: 3px;
+    z-index: 1;
 }
 
-    &__soc-list {
+    .hero__soc-list {
         @media screen and(min-width:375px) and (max-width:834px) {
             display: flex;
             align-items: center;
@@ -70,7 +85,7 @@
         }
     }
     
-    &__soc-list :not(:last-child) {
+    .hero__soc-list :not(:last-child) {
         @media screen and(min-width:375px) and (max-width:834px) {
             margin-right: 15px;
         }
@@ -84,3 +99,4 @@
 h1 span {
     display: block;
 }
+
