@@ -1,14 +1,15 @@
 .about-us {
+    
     padding-top: 171px;
     height: 573px;
     @media screen and (min-width:375px) {
         height: auto;
     }
-    &__paragraph {
+    .about-us__paragraph {
         margin-bottom: 32px;
     }
 
-    &__paragraph {
+    .about-us__paragraph {
         @media screen and (min-width:835px) {
             width: 369px;
         }
@@ -18,14 +19,14 @@
         }
     }
 
-    &__wtapper {
+    .about-us__wtapper {
         @media screen and (min-width:835px) {
             display: flex;
             justify-content: center;
         }
     }
 
-    &__paragraph-wrapper {
+    .about-us__paragraph-wrapper {
         @media screen and (min-width:835px) {
             margin-left: 32px;
         }
