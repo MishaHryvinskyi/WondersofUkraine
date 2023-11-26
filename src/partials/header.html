@@ -1,26 +1,34 @@
-<header class="header container">
-    <div class="header__container">
+<header class="header">
+    <div class="container">
         <nav class="header__navigation">
             <a href="./index.html">
                 <svg width="64" height="64">
                     <use href="./images/symbol-defs.svg#icon-logo-ukrain-1"></use>
                 </svg>
             </a>
-            <div class="header__mobile">
-                <ul class="list">
-                    <li>
-                        <a href="#about">About us</a>
-                    </li>
-                    <li>
-                        <a href="#our-tours">Tours</a>
-                    </li>
-                    <li>
-                        <a href="#gallery">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#contacts">Contacts</a>
-                    </li>
-                </ul>
+            <button type="button" class="mobile-button" data-menu-button>
+                <svg class="mobile-button__svg">
+                    <use class="mobile-button__cross" href="./images/symbol-defs.svg#icon-chair-svg-logo-1"></use>
+                    <use class="mobile-button__burger" href="./images/symbol-defs.svg#icon-burger-button"></use>
+                </svg>
+            </button>
+            <div class="header__mobile" data-menu>
+                <div class="mobile-content">
+                    <ul class="list">
+                        <li>
+                            <a href="#about">About us</a>
+                        </li>
+                        <li>
+                            <a href="#our-tours">Tours</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <ul class="header__navigation-list list">
                 <li class="header__navigation-items">
