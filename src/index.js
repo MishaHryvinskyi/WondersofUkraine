@@ -123,3 +123,19 @@
 
   });
 
+
+  const ref = { 
+    buttonRef: document.querySelector("[data-menu-button]"),
+    menuRef: document.querySelector("[data-menu]"),
+  };
+
+  const { buttonRef, menuRef } = ref;
+
+  buttonRef.addEventListener("click", () => {
+
+    menuRef.classList.toggle("is-open");
+
+    buttonRef.classList.toggle("is-open");
+  });
+
+  
