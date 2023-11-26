@@ -49,5 +49,8 @@
 <symbol id="icon-chair-svg-logo-1" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M24 8l-16 16M8 8l16 16"></path>
 </symbol>
+<symbol id="icon-burger-button" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M6.666 22.666h10.666M6.666 16h18.666M14.666 9.334h10.666"></path>
+</symbol>
 </defs>
 </svg>
