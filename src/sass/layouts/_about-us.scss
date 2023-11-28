@@ -1,34 +1,39 @@
-.about-us {
-    
-    padding-top: 171px;
-    height: 573px;
-    @media screen and (min-width:375px) {
+    .about-us {
+        padding-top: 101px;
         height: auto;
     }
     .about-us__paragraph {
         margin-bottom: 32px;
     }
+    .about-us--remove-margin {
+        margin-bottom: 0;
+    }
 
+@media screen and (min-width:835px) {
+    .about-us {
+        padding-top: 155px;
+    }
     .about-us__paragraph {
-        @media screen and (min-width:835px) {
-            width: 369px;
-        }
-    
-        @media screen and (min-width:1440px) {
-            width: 469px;
-        }
+        width: 369px;
+        margin-bottom: 0;
     }
-
+    .about-us--add-margin {
+        margin-bottom: 32px;
+    }
     .about-us__wtapper {
-        @media screen and (min-width:835px) {
-            display: flex;
-            justify-content: center;
-        }
+        display: flex;
+        justify-content: center;
     }
-
     .about-us__paragraph-wrapper {
-        @media screen and (min-width:835px) {
-            margin-left: 32px;
-        }
+        margin-left: 32px;
+    }
+}
+@media screen and (min-width:1440px) {
+    .about-us {
+        height: 573px;
+        padding-top: 171px;  
+    }
+    .about-us__paragraph {
+        width: 469px;
     }
 }
