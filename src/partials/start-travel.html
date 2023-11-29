@@ -7,9 +7,29 @@
         </div>
         <form class="order__form" name="order">
             <label class="order__label" for="user_name">Name</label>
-             <input class="order__input" name="name" type="text" placeholder="Enter your name" id="user_name">
+            <input 
+                class="order__input" 
+                name="name" 
+                type="text" 
+                placeholder="Enter your name" 
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
+                title="Username must be two words separated by space."
+                minlength="3" 
+                maxlength="12" 
+                id="user_name" 
+                required
+            >
             <label class="order__label" for="user_phone">Phone</label>
-            <input class="order__input" name="phone" type="tel" placeholder="+380__-___-__-__" id="user_phone">
+            <input 
+                class="order__input" 
+                name="phone" 
+                type="tel" 
+                placeholder="+380__-___-__-__" 
+                minlength="6" 
+                maxlength="12" 
+                id="user_phone" 
+                required
+            >
             <textarea class="order__textarea" name="" id="" cols="30" rows="5" placeholder="Your message"></textarea>
             <button class="button" type="submit">Send</button>
         </form>
