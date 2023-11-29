@@ -5,98 +5,122 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
 
-    @media screen and(min-width:375px) and (max-width:834px) {
+.hero__accent {
+    position: relative;
+}
+
+.hero__accent::after {
+    position: absolute;
+    top: 120px;
+    display: flex;
+    content: "Ukraine";
+    background: linear-gradient(15deg, #FFF -54.67%, rgba(255, 255, 255, 0.00) 68.38%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotateY(10deg) rotateX(180deg);
+    vertical-align: middle;
+}
+
+.hero__button {
+    z-index: 1;
+}
+
+.hero__title .hero__title--item {
+    display: block;
+}
+
+
+@media screen and(min-width:375px) and (max-width:834px) {
+    .hero {
         height: 861px;
         background-image: url(../images/mountains-4x-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    @media screen and(min-width:835px) {
-        height: 1075px;
-        background-image: url(../images/mountains-4x-talet.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    @media screen and(min-width:1440px) {  
-        height: 855px;
-        background-image: url(../images/mountain-4x-desktop.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }        
-
     .hero__title {
-        height: auto;
-        @media screen and(min-width:375px) and (max-width:834px) {
-            font-size: 24px;
-        }
-
-        @media screen and(min-width:835px) {
-            font-size: 48px;
-        }
-
-        @media screen and (min-width:1440px) {
-            margin-top: 180px;
-        }
+        font-size: 24px;
+        margin-bottom: 64px;
+        margin-top: 199px;
     }
 
     .hero__accent {
-        position: relative;
-        @media screen and(min-width:375px) and (max-width:834px) {
-            font-size: 64px;
-        }
-    
-        @media screen and(min-width:835px) {
-            font-size: 128px;
-        }
+        font-size: 64px;
     }
 
     .hero__accent::after {
-        position: absolute;
-        top: 120px;
-        display: flex;
-        content: "Ukraine";
-        background: linear-gradient(15deg, #FFF -54.67%, rgba(255, 255, 255, 0.00) 68.38%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transform: rotateY(10deg) rotateX(180deg);
-        vertical-align: middle;
+        top: 60px;
     }
 
-.hero__button {
-    margin-bottom: 3px;
-    z-index: 1;
-}
+    .hero__button {
+        margin-bottom: 225px;
+    }
 
     .hero__soc-list {
-        @media screen and(min-width:375px) and (max-width:834px) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        @media screen and(min-width:835px) {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            margin-left: auto;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    
+
     .hero__soc-list :not(:last-child) {
-        @media screen and(min-width:375px) and (max-width:834px) {
-            margin-right: 15px;
-        }
-
-        @media screen and(min-width:835px) {
-            margin-bottom: 15px;
-        }
+        margin-right: 15px;
     }
 }
 
-h1 span {
-    display: block;
+@media screen and(min-width:835px) {
+    .hero {
+        height: 1075px;
+        background-image: url(../images/mountains-4x-talet.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .hero__title {
+        font-size: 48px;
+        margin-top: 195px;
+        margin-bottom: 64px;
+    }
+
+    .hero__accent {
+        font-size: 128px;
+    }
+
+    .hero__accent::after {
+        top: 120px;
+    }
+
+    .hero__button {
+        margin-bottom: 135px;
+    }
+
+    .hero__soc-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: auto;
+    }
+
+    .hero__soc-list :not(:last-child) {
+        margin-bottom: 15px;
+    }
 }
 
+@media screen and(min-width:1440px) {  
+    .hero {
+        height: 855px;
+        background-image: url(../images/mountain-4x-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;      
+    }
+
+    .hero__title {
+        margin-top: 180px;
+    }
+
+    .hero__button {
+        margin-bottom: 3px;
+    }
+}
