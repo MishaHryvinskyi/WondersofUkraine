@@ -1,130 +1,122 @@
 .footer {
     align-items: flex-start;
     justify-content: center;
-    padding-top: 16px;
     padding-bottom: 16px;
+}
 
-    @media screen and (min-width:835px) {
+.footer__wrapper {
+    margin-bottom: 64px;
+    display: flex;
+}
+
+.footer__logo-svg {
+    width: 127px;
+    height: 90px;
+}
+
+.footer__address-list {
+    margin-bottom: 32px;
+}
+
+.footer__address-list .fotter__address-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__soc-list {
+    display: flex;
+
+    & :not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
+.footer__rights {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Jomolhari;
+    font-size: 12px;
+}
+
+@media screen and (min-width:375px) and (max-width:834px) {
+    .footer__wrapper {
+        flex-direction: column;
+    }
+
+    .footer__logo-wrapper {
+        margin-bottom: 32px;
+    }
+
+    .footer__navigation-list {
+        margin-bottom: 32px;
+    }
+
+    .footer__navigation-list .footer__navigation-items:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .footer__address-list .fotter__address-item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (min-width:835px) {
+    .footer {
         padding-top: 32px;
         padding-bottom: 16px;
     }
 
-    &__wrapper {
-        margin-bottom: 64px;
-    
-        @media screen and (min-width:375px) {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        @media screen and (min-width: 835px) {
-            flex-direction: row;
-            justify-content: space-between;
-        }
+    .footer__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    &__logo-wrapper {
-        @media screen and (min-width:375px) {
-            margin-bottom: 32px;
-        }
-
-        @media screen and (min-width:835px) {
-            margin-bottom: 0;
-        }
+    .footer__logo-wrapper {
+        margin-bottom: 0;
     }
 
-    &__logo-svg {
-        width: 127px;
-        height: 90px;
-
-        @media screen and (min-width:835px) {
-            width: 169px;
-            height: 125px;
-        }
-
-        @media screen and (min-width:1440px) {
-            width: 196px;
-            height: 192px;
-        }
+    .footer__logo-svg {
+        width: 169px;
+        height: 125px;
     }
 
-    &__navigation-list {
-        @media screen and (min-width:375px) {
-            margin-bottom: 32px;
-        }
-
-        @media screen and (min-width:835px) {
-            margin-bottom: 0;
-        }
+    .footer__navigation-list {
+        margin-bottom: 0;
     }
 
-    &__navigation-list li:not(:last-child) {
-        @media screen and (min-width:375px) {
-            margin-bottom: 8px;
-        }
-
-        @media screen and (min-width:835px) {
-            margin-bottom: 16px;
-        }
+    .footer__navigation-list .footer__navigation-items:not(:last-child) {
+        margin-bottom: 16px;
     }
 
-    &__navigation-link {
-        @media screen and (min-width:835px) {
-            font-size: 18px;
-        }
+    .footer__navigation-link {
+        font-size: 18px;
     }
 
-    &__address-list {
-        @media screen and (min-width:375px) {
-            margin-bottom: 32px;
-        }
+    .footer__address-list .fotter__address-item {
+        align-items: flex-end;
     }
 
-    &__address-list li {
-        display: flex;
-        flex-direction: column;
-       
-        @media screen and (min-width:835px) {
-            align-items: flex-end;
-        }
+    .footer__address-list .fotter__address-item:not(:last-child) {
+        margin-bottom: 16px;
     }
 
-    &__address-list li:not(:last-child) {
-        @media screen and (min-width:375px) {
-            margin-bottom: 8px;
-        }
-
-        @media screen and (min-width:835px) {
-            margin-bottom: 16px;
-        }
+    .footer__address-link {
+        font-size: 18px;
     }
 
-    &__address-link {
-        @media screen and (min-width:835px) {
-            font-size: 18px;
-        }
+    .footer__soc-list {
+        justify-content: end;
     }
 
-    &__soc-list {
-        display: flex;
-        @media screen and (min-width:835px) {
-            justify-content: end;
-        }
-    }
-
-    &__soc-list :not(:last-child) {
-        margin-right: 15px;
-    }
-
-    &__rights {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: Jomolhari;
-        font-size: 12px;
-    
-        @media screen and (min-width:835px) {
+    .footer__rights {
         font-size: 14px;
-        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .footer__logo-svg {
+        width: 196px;
+        height: 192px;
     }
 }
