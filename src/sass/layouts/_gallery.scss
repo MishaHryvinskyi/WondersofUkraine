@@ -19,11 +19,11 @@
     border: none;
     height: 10px;
     cursor: pointer;
-}
 
-.gallery__button-prev .gallery__svg:hover,
-.gallery__button-next .gallery__svg:hover {
-    fill: var(--hover-svg-color);
+    & .gallery__svg:hover,
+    & .gallery__svg:hover {
+        fill: var(--hover-svg-color);
+    }
 }
 
 @media screen and (min-width:375px) and (max-width:834px) {

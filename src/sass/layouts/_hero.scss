@@ -9,19 +9,19 @@
 
 .hero__accent {
     position: relative;
-}
 
-.hero__accent::after {
-    position: absolute;
-    top: 120px;
-    display: flex;
-    content: "Ukraine";
-    background: linear-gradient(15deg, #FFF -54.67%, rgba(255, 255, 255, 0.00) 68.38%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: rotateY(10deg) rotateX(180deg);
-    vertical-align: middle;
+    &::after {
+        position: absolute;
+        top: 120px;
+        display: flex;
+        content: "Ukraine";
+        background: linear-gradient(15deg, #FFF -54.67%, rgba(255, 255, 255, 0.00) 68.38%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: rotateY(10deg) rotateX(180deg);
+        vertical-align: middle;
+    }
 }
 
 .hero__button {
@@ -49,10 +49,10 @@
 
     .hero__accent {
         font-size: 64px;
-    }
 
-    .hero__accent::after {
-        top: 60px;
+        &::after {
+            top: 60px;
+        }
     }
 
     .hero__button {
@@ -63,10 +63,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
 
-    .hero__soc-list :not(:last-child) {
-        margin-right: 15px;
+        & :not(:last-child) {
+            margin-right: 15px;
+        }
     }
 }
 
@@ -86,10 +86,10 @@
 
     .hero__accent {
         font-size: 128px;
-    }
 
-    .hero__accent::after {
-        top: 120px;
+        &::after {
+            top: 120px;
+        }
     }
 
     .hero__button {
@@ -101,10 +101,10 @@
         flex-direction: column;
         align-items: flex-end;
         margin-left: auto;
-    }
 
-    .hero__soc-list :not(:last-child) {
-        margin-bottom: 15px;
+        & :not(:last-child) {
+            margin-bottom: 15px;
+        }
     }
 }
 

@@ -19,6 +19,15 @@
   display: flex;
   align-items: center;
   justify-content: start;
+
+  &::before {
+    content: "";
+    background-size: contain;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 24px;
+  }
 }
 
 .review-title {
@@ -29,21 +38,12 @@
   margin-bottom: 8px;
 }
 
-.review-wrapper__title::before {
-  content: "";
-  background-size: contain;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  margin-right: 24px;
-}
-
 .review-list {
   display: flex;
-}
 
-.review-list :not(:last-child) {
-  margin-right: 4px;
+  & :not(:last-child) {
+    margin-right: 4px;
+  }
 }
 
 @each $people in dmitro, alisa, marry, fedir, anastasia, victoria, valeriy, ilona {
