@@ -11,6 +11,10 @@
     
 }
 
+.header__main-logo,
+.mobile-button {
+    z-index: 999;
+}
 
 
 @media screen and (min-width:375px) {
@@ -37,7 +41,9 @@
             transform: translateX(0);
         }
     }
+}
 
+@media screen and (max-width:834px) {
     .mobile-content {
         position: absolute;
         visibility: visible;
@@ -47,13 +53,11 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 80%;
+        width: 100%;
         background-image: url(../images/background-mobile-4x.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
-
-    
 }
 
 
