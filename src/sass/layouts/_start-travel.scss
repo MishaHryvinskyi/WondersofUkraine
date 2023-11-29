@@ -1,12 +1,55 @@
 .order {
     background-image: url(../images/hay-4x.jpg);
     background-color: var(--background-color);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
 
-    @media screen and (min-width:375px) and (max-width:835px) {
+.order__wrapper {
+    background-color: var(--background-color);
+}
+
+.order__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.order_paragraph {
+    margin-bottom: 24px;
+}
+
+.order__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order__label {
+    margin-bottom: 8px;
+}
+
+.order__textarea {
+    margin-bottom: 32px;
+}
+
+.order__input {
+    margin-bottom: 12px;
+}
+
+.order__input, 
+.order__textarea {
+    padding: 14px 12px;
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+    border: 1px solid var(--main-text-color);
+    border-radius: 4px;
+}
+
+@media screen and (min-width:375px) and (max-width:834px) {
+    .order {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right bottom;
@@ -15,7 +58,24 @@
         margin-top: 80px;
     }
 
-    @media screen and (min-width:835px) {
+    .order__wrapper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .order__paragraph-wrapper {
+        margin-bottom: 32px;
+    }
+
+    .order__input {
+        width: auto;
+    }
+}
+
+@media screen and (min-width:835px) {
+    .order {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: left bottom;
@@ -24,99 +84,38 @@
         margin-top: 100px;
     }
 
-    &__wrapper {
-        background-color: var(--background-color);
-        @media screen and (min-width:375px) {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-    
-        @media screen and (min-width:835px) {
-            width: 770px;
-            height: 516px;
-            display: flex;
-            border: 1px solid var(--main-text-color);
-            border-radius: 4px;
-            padding-top: 69px;
-            padding-bottom: 69px;
-            padding-left: 49px;
-            padding-right: 49px;
-        }
-    
-        @media screen and (min-width:1440px) {
-            width: 1032px;
-            height: 570px;
-            display: flex;
-            border: 1px solid var(--main-text-color);
-            border-radius: 4px;
-            padding-top: 96px;
-            padding-bottom: 96px;
-            padding-left: 180px;
-            padding-right: 180px;
-        }
-    }
-
-    &__title {
-        font-size: 32px;
-        margin-bottom: 24px;
+    .order__wrapper {
+        width: 770px;
+        height: 516px;
         display: flex;
-    }
-
-    &__paragraph-wrapper {
-        @media screen and (min-width:375px) {
-            margin-bottom: 32px;
-        }
-    
-        @media screen and (min-width:835px) {
-            margin-bottom: 0;
-            margin-right: 32px;
-        }
-    }
-
-    &_paragraph {
-        margin-bottom: 24px;
-    }
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    &__label {
-        margin-bottom: 8px;
-    }
-
-    &__input {
-        margin-bottom: 12px;
-        @media screen and (min-width:375px) {
-            width: auto;
-        }
-    
-        @media screen and (min-width:835px) {
-            width: 320px;
-        }
-    }
-
-    &__textarea {
-        margin-bottom: 32px;
-    }
-
-    &__input, 
-    &__textarea {
-        padding: 14px 12px;
-        background-color: var(--background-color);
-        color: var(--main-text-color);
         border: 1px solid var(--main-text-color);
         border-radius: 4px;
+        padding-top: 69px;
+        padding-bottom: 69px;
+        padding-left: 49px;
+        padding-right: 49px;
+    }
+
+    .order__paragraph-wrapper {
+        margin-bottom: 0;
+        margin-right: 32px;
+    }
+
+    .order__input {
+        width: 320px;
     }
 }
 
-.order__wrapper .container {
-    @media screen and (min-width:375px) {
-        background-color: var(--background-color);
-        height: 692px;
-        z-index: 999;
+@media screen and (min-width:1440px) {
+    .order__wrapper {
+        width: 1032px;
+        height: 570px;
+        display: flex;
+        border: 1px solid var(--main-text-color);
+        border-radius: 4px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        padding-left: 180px;
+        padding-right: 180px;
     }
 }
