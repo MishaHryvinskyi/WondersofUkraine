@@ -1,5 +1,5 @@
 .order {
-    background-image: url(../images/hay-4x.jpg);
+    background-image: url(../images/hay/hay-1x.jpg);
     background-color: var(--background-color);
     background-size: cover;
     display: flex;
@@ -7,6 +7,31 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (min-device-pixel-rato: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .order {
+            background-image: url(../images/hay/hay-2x.jpg);
+        }
+    }
+    @media screen and (min-device-pixel-rato: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .order {
+            background-image: url(../images/hay/hay-3x.jpg);
+        }
+    }
+    @media screen and (min-device-pixel-rato: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        .order {
+            background-image: url(../images/hay/hay-4x.jpg);
+        }
+    }
 
 .order__wrapper {
     background-color: var(--background-color);

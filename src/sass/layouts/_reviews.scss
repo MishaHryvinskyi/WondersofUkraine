@@ -54,7 +54,32 @@
 
 @media screen and (min-width:375px) and (max-width:834px) {
   .reviews {
-    background-image: url(../images/background-review/background-review-mobile.jpg.jpg);
+    background-image: url(../images/background-review/background-review-mobile-1x.jpg);
+  }
+
+  @media screen and (min-device-pixel-rato: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+      .reviews {
+          background-image: url(../images/background-review/background-review-mobile-2x.jpg);
+      }
+  }
+  @media screen and (min-device-pixel-rato: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+      .reviews {
+          background-image: url(../images/background-review/background-review-mobile-3x.jpg);
+      }
+  }
+  @media screen and (min-device-pixel-rato: 4),
+  (-webkit-min-device-pixel-ratio: 4),
+  screen and (min-resolution: 384dpi),
+  screen and (min-resolution: 4dppx) {
+      .reviews {
+          background-image: url(../images/background-review/background-review-mobile-4x.jpg);
+      }
   }
 
   .review-wrapper {
@@ -67,8 +92,33 @@
 }
 @media screen and (min-width:835px) {
   .reviews {
-    background-image: url(../images/background-review/background-review-tablet.jpg.jpg);
+    background-image: url(../images/background-review/background-review-tablet-1x.jpg);
   }
+
+  @media screen and (min-device-pixel-rato: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .reviews {
+            background-image: url(../images/background-review/background-review-tablet-2x.jpg);
+        }
+    }
+    @media screen and (min-device-pixel-rato: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .reviews {
+            background-image: url(../images/background-review/background-review-tablet-3x.jpg);
+        }
+    }
+    @media screen and (min-device-pixel-rato: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        .reviews {
+            background-image: url(../images/background-review/background-review-tablet-4x.jpg);
+        }
+    }
 
   .review-wrapper {
     width: 320px;
@@ -78,8 +128,34 @@
     font-size: 20px;
   }
 }
+
 @media screen and (min-width:1440px) {
   .reviews {
-    background-image: url(../images/background-review/background-review-dekstop.jpg.jpg);
+    background-image: url(../images/background-review/background-review-desktop-1x.jpg);
   }
+
+  @media screen and (min-device-pixel-rato: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .reviews {
+            background-image: url(../images/background-review/background-review-desktop-2x.jpg);
+        }
+    }
+    @media screen and (min-device-pixel-rato: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .reviews {
+            background-image: url(../images/background-review/background-review-desktop-3x.jpg);
+        }
+    }
+    @media screen and (min-device-pixel-rato: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        .reviews {
+            background-image: url(../images/background-review/background-review-desktop-4x.jpg);
+        }
+    }
 }
