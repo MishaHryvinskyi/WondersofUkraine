@@ -3,6 +3,7 @@
     margin: 0 auto;
     @media screen and (min-width:320px) and (max-width:375px) {
         padding: 0 16px;
+        width: auto;
     }
     @media screen and(min-width:375px) and (max-width:834px) {
         max-width: 375px;
