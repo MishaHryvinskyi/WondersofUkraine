@@ -52,7 +52,7 @@
   }
 }
 
-@media screen and (min-width:375px) and (max-width:834px) {
+@media screen and (min-width:320px) and (max-width:834px) {
   .reviews {
     background-image: url(../images/background-review/background-review-mobile-1x.jpg);
   }
@@ -90,6 +90,13 @@
     font-size: 18px;
   }
 }
+
+@media screen and (min-width:320px) and (max-width:374px) {
+  .review-wrapper {
+    width: auto;
+  }
+}
+
 @media screen and (min-width:835px) {
   .reviews {
     background-image: url(../images/background-review/background-review-tablet-1x.jpg);
